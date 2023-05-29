@@ -2,10 +2,7 @@ const mongoose = require("mongoose");
 
 const app = require("./app");
 
-// NtAe5AxKE76MnQHf;
-
-const DB_HOST =
-  "mongodb+srv://Tolik2023:NtAe5AxKE76MnQHf@cluster0.6uflqwo.mongodb.net/db-contacts?retryWrites=true&w=majority";
+const { DB_HOST } = require("./config");
 
 mongoose
   .connect(DB_HOST)
